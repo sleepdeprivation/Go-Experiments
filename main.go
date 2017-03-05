@@ -3,7 +3,6 @@
 */
 package main
 
-import "fmt"
 
 /*
 	Rotate a slice in a circular fashion
@@ -63,5 +62,4 @@ func fibArr(n int) int{
 
 
 func main() {
-	fmt.Println("asdafasdfasd");
 }

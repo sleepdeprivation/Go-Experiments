@@ -1,3 +1,6 @@
+/*
+	Getting to know the go language
+*/
 package main
 
 import "fmt"
@@ -15,14 +18,12 @@ func rotateSlice(arr []int){
 	arr[i] = a;
 }
 
-func testRotation(){
-		t := []int {1,2,3,4,5,6,7,8};
-		rotateSlice(t);
-		fmt.Println(t);
-}
-
-func rotateSliceEasy(arr []int){
-
+/*
+	Rotate slice using fancy syntax
+	This is probably dangerous in some way
+*/
+func rotateSliceEasy(arr []int) []int{
+	return append(arr[1:], arr[0]);
 }
 
 /*
@@ -60,20 +61,7 @@ func fibArr(n int) int{
 	return arr[2];
 }
 
-/*
-	Cross validate the fib funcs
-*/
-func testFibs() bool{
-	var show [3]int;
-	passed := true;
-	for i := 0; i < 20 && passed; i++{
-		show[0],show[1],show[2] = fib(i), fibR(i), fibArr(i);
-		passed = passed && show[0] == show[1] && show[1] == show[2];
-		fmt.Println(show, passed);
-	}
-	return passed;
-}
 
 func main() {
-	//testFibs();
+	fmt.Println("asdafasdfasd");
 }
